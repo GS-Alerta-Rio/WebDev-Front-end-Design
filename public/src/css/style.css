@@ -1,5 +1,6 @@
 body {
     font-family: "Inter", sans-serif;
+   
     margin: 0;
     padding: 0 20px; /* Adiciona espaçamento lateral de 20px */
 }
@@ -39,16 +40,65 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
+    padding-top: 20px;
 }
 
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 5px;
+#problema {
+    text-align: center; /* Centraliza o título */
+    padding: 20px; /* Adiciona um pouco de espaço em volta da seção */
 }
 
+#problema h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #000000; /* Cor do título */
+}
+
+.content-wrapper {
+    display: flex; /* Habilita o Flexbox para alinhar card e imagem */
+    justify-content: center; /* Centraliza o conteúdo (card e imagem) */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 40px; /* Espaço entre o card e a imagem */
+    max-width: 1200px; /* Largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o content-wrapper na página */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.card {
+    flex: 1; /* Permite que o card ocupe o espaço disponível */
+    background-color: white; /* Cor de fundo do card */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px; /* Espaço interno no card */
+    text-align: left; /* Alinha o texto à esquerda dentro do card */
+    max-width: 500px; /* Largura máxima para o card */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+        }
+
+.card:hover {
+     transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    }
+
+
+
+.card p {
+    font-size: 1.3rem;
+    color: #000000; /* Cor do texto */
+}
+
+.imagem-container {
+    flex: 1; /* Permite que a imagem ocupe o espaço disponível */
+    max-width: 100%; /* Largura máxima para o container da imagem */
+    display: flex; /* Garante que a imagem se ajuste */
+    justify-content: center; /* Centraliza a imagem se houver espaço extra */
+}
+
+.imagem-container img {
+     width: 500px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+    border-radius: 8px; /* Cantos arredondados para a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+}
 footer {
     text-align: center;
     padding: 20px;
