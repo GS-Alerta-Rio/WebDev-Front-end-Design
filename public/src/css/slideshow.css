@@ -1,0 +1,67 @@
+.slideshow-container {
+    max-width: 1200px; /* Ou o tamanho que desejar */
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Importante para slides que "saem" da tela */
+}
+
+/* Esconde todos os slides por padrão */
+.meu-slide {
+    display: none;
+    text-align: center; /* Centraliza o conteúdo do slide, como a imagem */
+}
+
+.meu-slide img {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    vertical-align: middle; /* Alinha a imagem verticalmente, se necessário */
+}
+
+/* Botões de próximo e anterior */
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px; /* Metade da altura do padding + font-size */
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; /* Impede a seleção do texto do botão */
+    background-color: rgba(0,0,0,0.3); /* Fundo semi-transparente */
+}
+
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto da legenda (opcional) */
+.texto-slide {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Animação de Fade (opcional) */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
