@@ -266,6 +266,12 @@ main {
     flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
 }
 
+#dia-a-dia {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
