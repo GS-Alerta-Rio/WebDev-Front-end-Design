@@ -2,7 +2,7 @@ body {
     font-family: "Inter", sans-serif;
     background-color: #22577a;
     margin: 0;
-    padding: 0 100px; /* Adiciona espaçamento lateral de 20px */
+    padding: 0 100px;
 }
 
 header {
@@ -16,6 +16,13 @@ header {
 
 .logo img {
     max-height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
@@ -36,7 +43,22 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #22577a;
+}
+
+.theme-switcher {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: inline-block;
 }
 
 main {
@@ -78,7 +100,7 @@ main {
         }
 
 .card:hover {
-     transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+     transform: translateY(-5px); /* Efeito ao passar o mouse */
     }
 
 
@@ -153,7 +175,7 @@ main {
     width: 100%;
     height: 200px;
     border-radius: 4px;
-    margin-top: auto; /* Empurra a imagem para o final do card */
+    margin-top: auto;
 }
 
 #objetivos {
@@ -165,10 +187,10 @@ main {
 #objetivos .cards-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
-    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap;
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o container de cards */
+    margin: 0 auto;
 }
 
 #objetivos .tech-card {
@@ -189,10 +211,10 @@ main {
 
 #objetivos .tech-card h3 {
     font-size: 2rem;
-    color: #22577a; /* Cor azul para o título da tecnologia */
+    color: #22577a; 
     margin-top: 0;
     margin-bottom: 10px;
-    min-height: 4.8rem; /* Altura mínima para o título */
+    min-height: 4.8rem; 
 }
 
 #objetivos .tech-card p {
@@ -200,7 +222,7 @@ main {
     line-height: 1.5;
     color: #000000;
     margin-bottom: 15px;
-    flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
+    flex-grow: 1; 
 }
 
 #publico-alvo {
@@ -215,10 +237,10 @@ main {
 
 #publico-alvo .titulo-li {
     font-size: 1.3rem;
-    display: block; /* Faz o span ocupar a linha inteira */
+    display: block; 
     font-weight: bold;
-    color: #22577a; /* Cor azul para o título do público-alvo */
-    margin-bottom: 5px; /* Ajusta o espaço abaixo do título */
+    color: #22577a; 
+    margin-bottom: 5px; 
 }
 
 #beneficios {
@@ -230,10 +252,10 @@ main {
 #beneficios .cards-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
-    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap;
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o container de cards */
+    margin: 0 auto;
 }
 
 #beneficios .tech-card {
@@ -244,8 +266,8 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    display: flex; /* Adicionado para controle de alinhamento interno */
-    flex-direction: column; /* Adicionado para empilhar conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
 }
 
 #beneficios .tech-card:hover {
@@ -265,7 +287,7 @@ main {
     line-height: 1.5;
     color: #000000;
     margin-bottom: 15px;
-    flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
+    flex-grow: 1;
 }
 
 #dia-a-dia {
@@ -274,12 +296,105 @@ main {
 }
 
 
+/* Classes de Tema para o Body */
+body.theme-default {
+    background-color: #22577A;
+}
+
+body.theme-light {
+    background-color: #f0f0f0;
+}
+
+body.theme-light main {
+    background-color: #ffffff;
+}
+
+body.theme-dark {
+    background-color: #333333;
+}
+
+body.theme-dark main {
+    background-color: #444444;
+}
+
+body.theme-dark li,
+body.theme-dark nav ul li a {
+    color: #000000; 
+}
+
+body.theme-dark nav ul li a:hover {
+    color: #22577a;
+}
+
+body.theme-dark h2,
+body.theme-dark h3 {
+    color: #fff;
+}
+
+body.theme-dark p {
+    color: #e0e0e0;
+}
+
+body.theme-dark  .card {
+    background-color: #555555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+ body.theme-dark #tecnologias .tech-card {
+    background-color: #505050; /* Cor de fundo do card de tecnologia no tema escuro */
+    border: 1px solid #666;
+}
+
+body.theme-dark #tecnologias .tech-card h3 {
+    color: #87cefa; /* Cor do título do card de tecnologia no tema escuro */
+}
+
+body.theme-dark #tecnologias .tech-card p {
+    color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
+}
+
+ body.theme-dark #objetivos .tech-card {
+    background-color: #505050; /* Cor de fundo do card de tecnologia e objetivos no tema escuro */
+    border: 1px solid #666;
+}
+
+body.theme-dark #objetivos .tech-card h3 {
+    color: #87cefa; /* Cor do título do card de objetivos no tema escuro */
+}
+
+body.theme-dark #objetivos .tech-card p {
+    color: #e0e0e0; /* Cor do texto do card de objetivos no tema escuro */
+}
+
+body.theme-dark #publico-alvo .card .titulo-li {
+   color: #87cefa; 
+}
+
+body.theme-dark #publico-alvo .card li {
+    color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
+}
+
+ body.theme-dark #beneficios .tech-card {
+    background-color: #505050; /* Cor de fundo do card de tecnologia no tema escuro */
+    border: 1px solid #666;
+}
+
+body.theme-dark #beneficios .tech-card h3 {
+    color: #87cefa; /* Cor do título do card de tecnologia no tema escuro */
+}
+
+body.theme-dark #beneficios .tech-card p {
+    color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
+}
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
-    position: relative; /* Alterado para relative ou fixed dependendo do design */
+    position: relative;
     bottom: 0;
     width: 100%;
 }
+
+
+
