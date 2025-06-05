@@ -1,3 +1,59 @@
+/* Estilos para o ícone hambúrguer ativo (transforma em X) */
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Ajustes de tema para o menu mobile */
+body.theme-default .hamburger-menu span {
+    background-color: #333; /* Cor padrão do ícone */
+}
+body.theme-default .nav-links {
+    background-color: #f8f8f8;
+}
+body.theme-default .nav-links a {
+    color: #000000;
+}
+
+body.theme-default .nav-links a:hover {
+    color: #22577a;
+}
+
+
+body.theme-light .hamburger-menu span {
+    background-color: #333; /* Ícone escuro em tema claro */
+}
+body.theme-light .nav-links {
+    background-color: #ffffff;
+}
+body.theme-light .nav-links a {
+    color: #000000;
+}
+
+body.theme-light .nav-links a:hover {	
+    color: #22577a;
+}
+
+
+body.theme-dark .hamburger-menu span {
+    background-color: #f0f0f0; /* Ícone claro em tema escuro */
+}
+
+body.theme-dark .nav-links a {
+    color: #000000;
+}
+body.theme-dark .nav-links a:hover {
+    color: #22577a;
+}
+
+
 .theme-switcher {
     display: flex;
     gap: 10px;
