@@ -158,6 +158,58 @@ main {
     margin-top: auto; /* Empurra a imagem para o final do card */
 }
 
+#objetivos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#objetivos h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+#objetivos .cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+    gap: 20px; /* Espaço entre os cards */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container de cards */
+}
+
+#objetivos .tech-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Largura fixa para os cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Adicionado para controle de alinhamento interno */
+    flex-direction: column; /* Adicionado para empilhar conteúdo verticalmente */
+}
+
+#objetivos .tech-card:hover {
+    transform: translateY(-5px);
+}
+
+#objetivos .tech-card h3 {
+    font-size: 2rem;
+    color: #22577a; /* Cor azul para o título da tecnologia */
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 4.8rem; /* Altura mínima para o título */
+}
+
+#objetivos .tech-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -166,4 +218,4 @@ footer {
     position: relative; /* Alterado para relative ou fixed dependendo do design */
     bottom: 0;
     width: 100%;
-}
+}    
