@@ -42,16 +42,17 @@ main {
     padding-top: 20px;
 }
 
+ h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
 #problema {
     text-align: center; /* Centraliza o título */
     padding: 20px; /* Adiciona um pouco de espaço em volta da seção */
 }
 
-#problema h2 {
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    font-size: 2.5rem; /* Tamanho do título */
-    color: #000000; /* Cor do título */
-}
 
 .content-wrapper {
     display: flex; /* Habilita o Flexbox para alinhar card e imagem */
@@ -104,11 +105,6 @@ main {
     padding: 40px 20px;
 }
 
-#tecnologias h2 {
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    color: #000000;
-}
 
 #tecnologias .cards-container {
     display: flex;
@@ -163,11 +159,6 @@ main {
     padding: 40px 20px;
 }
 
-#objetivos h2 {
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    color: #000000;
-}
 
 #objetivos .cards-container {
     display: flex;
@@ -210,6 +201,24 @@ main {
     flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
 }
 
+#publico-alvo {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#publico-alvo .card li {
+    font-size: 1.1rem;
+    color: #000000; 
+}
+
+#publico-alvo .titulo-li {
+    font-size: 1.3rem;
+    display: block; /* Faz o span ocupar a linha inteira */
+    font-weight: bold;
+    color: #22577a; /* Cor azul para o título do público-alvo */
+    margin-bottom: 5px; /* Ajusta o espaço abaixo do título */
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -218,4 +227,4 @@ footer {
     position: relative; /* Alterado para relative ou fixed dependendo do design */
     bottom: 0;
     width: 100%;
-}    
+}
