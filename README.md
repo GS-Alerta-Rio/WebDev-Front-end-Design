@@ -52,6 +52,8 @@ O site possui um design limpo, com seções bem definidas e um slideshow de bann
 
 1.  Clone este repositório (se aplicável) ou baixe os arquivos.
 2.  Abra o arquivo `index.html` em qualquer navegador web moderno (Google Chrome, Firefox, Edge, etc.).
+3.  Acesse o site publicado através do link: [https://gs-alerta-rio.github.io/WebDev-Front-end-Design/](https://gs-alerta-rio.github.io/WebDev-Front-end-Design/)
+
 
 ## Como Usar
 
