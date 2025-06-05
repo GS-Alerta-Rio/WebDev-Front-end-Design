@@ -46,6 +46,27 @@ nav ul li a:hover {
     color: #22577a;
 }
 
+main {
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+ h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .theme-switcher {
     display: flex;
     gap: 10px;
@@ -61,16 +82,7 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-main {
-    padding-top: 20px;
-    background-color: #fff;
-}
 
- h2 {
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    color: #000000;
-}
 
 #problema {
     text-align: center; /* Centraliza o título */
@@ -386,15 +398,6 @@ body.theme-dark #beneficios .tech-card p {
     color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 
 
 
