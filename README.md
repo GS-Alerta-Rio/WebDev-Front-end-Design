@@ -60,10 +60,3 @@ O site possui um design limpo, com seções bem definidas e um slideshow de bann
 *   **Navegação:** Utilize os links no menu superior (ou no menu hambúrguer em dispositivos móveis) para navegar pelas diferentes seções da página.
 *   **Slideshow:** Clique nas setas laterais do slideshow para avançar ou retroceder os banners.
 *   **Seletor de Temas:** Clique nos ícones coloridos no canto superior direito da navegação para alterar o tema de cores do site. Sua escolha será lembrada na próxima visita.
-
-## Possíveis Melhorias Futuras
-
-*   Adicionar animações mais elaboradas nas transições de seções ou ao rolar a página.
-*   Integrar um formulário de contato.
-*   Otimizar ainda mais as imagens para melhor performance.
-*   Adicionar testes unitários ou de interface.
