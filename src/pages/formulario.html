@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para contato</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/landingpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header>
+        <div class="logo">
+            <img src="../assets/imgs/logo 2.png" alt="Logo da Empresa">
+        </div>
+        <nav>
+            <button class="hamburger-menu" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/index.html#problema">Problema</a></li>
+                    <li><a href="/index.html#tecnologias">Tecnologias</a></li>
+                    <li><a href="/index.html#objetivos">Objetivos</a></li>
+                    <li><a href="/index.html#publico-alvo">Público-Alvo</a></li>
+                    <li><a href="/index.html#beneficios">Benefícios</a></li>
+                    <li><a href="/index.html#dia-a-dia">Dia a Dia</a></li>
+                    <li><a href="../pages/quiz.html">Quiz</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>
+                </ul>
+            </div>
+            <div class="theme-switcher">
+                <span class="theme-icon" data-theme="default" style="background-color: #22577A;"></span>
+                <span class="theme-icon" data-theme="light" style="background-color: #f0f0f0;"></span>
+                <span class="theme-icon" data-theme="dark" style="background-color: #333333;"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+<section class="container">
+        <div class="form-titulo">
+          <h2>Entre em Contato</h2>
+        </div>
+      <div class="form-box">
+      
+        <form action="/index.html" method="GET" class="form-contato">
+        
+            <div class="form-group">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" name="cidade" required />
+            </div>
+
+            <div class="form-group">
+              <label for="estado">Estado:</label>
+              <input type="text" id="estado" name="estado" required />
+            </div>
+
+            <div class="form-group">
+              <label for="instituicao">Institição em que Trabalha:</label>
+              <input type="text" id="instituicao" name="instituicao" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input type="text" id="telefone" name="telefone" required />
+            </div>
+
+            <div class="form-group-textarea-full-width">
+              <label for="conteudo">Nos diga a sua necessidade:</label>
+              <textarea id="conteudo" name="conteudo" placeholder="Comece a digitar aqui..." maxlength="5000" required></textarea>
+              <span class="char-count">Até 5000 caracteres</span>
+            </div>
+
+            <button type="submit" class="button-enviar">Enviar</button>            
+          </div>
+          
+        <form>
+        
+      </div>
+    </main>
+   <footer>
+        <p>&copy; 2025 Hydrome. Todos os direitos reservados.</p>
+    </footer>
+    
+      <script src="../js/formulario.js"></script>
+      <script src="../js/script.js"></script>
+</body>
+</html>
