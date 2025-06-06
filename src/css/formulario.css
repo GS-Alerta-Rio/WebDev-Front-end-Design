@@ -1,0 +1,214 @@
+
+/* Classes de Tema para o Body */
+body.theme-default {
+    background-color: #22577A;
+}
+
+body.theme-light {
+    background-color: #f0f0f0;
+}
+
+body.theme-light main {
+    background-color: #ffffff;
+}
+
+body.theme-dark {
+    background-color: #333333;
+}
+
+body.theme-dark main {
+    background-color: #444444;
+}
+
+body.theme-dark li,
+body.theme-dark nav ul li a {
+    color: #000000; 
+}
+
+body.theme-dark nav ul li a:hover {
+    color: #22577a;
+}
+
+body.theme-dark h2,
+body.theme-dark h3 {
+    color: #fff;
+}
+
+body.theme-dark p {
+    color: #e0e0e0;
+}
+
+body.theme-dark  .card {
+    background-color: #555555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+ body.theme-dark #tecnologias .tech-card {
+    background-color: #505050; /* Cor de fundo do card de tecnologia no tema escuro */
+    border: 1px solid #666;
+}
+
+body.theme-dark #tecnologias .tech-card h3 {
+    color: #87cefa; /* Cor do título do card de tecnologia no tema escuro */
+}
+
+body.theme-dark #tecnologias .tech-card p {
+    color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
+}
+
+ body.theme-dark #objetivos .tech-card {
+    background-color: #505050; /* Cor de fundo do card de tecnologia e objetivos no tema escuro */
+    border: 1px solid #666;
+}
+
+body.theme-dark #objetivos .tech-card h3 {
+    color: #87cefa; /* Cor do título do card de objetivos no tema escuro */
+}
+
+body.theme-dark #objetivos .tech-card p {
+    color: #e0e0e0; /* Cor do texto do card de objetivos no tema escuro */
+}
+
+body.theme-dark #publico-alvo .card .titulo-li {
+   color: #87cefa; 
+}
+
+body.theme-dark #publico-alvo .card li {
+    color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
+}
+
+ body.theme-dark #beneficios .tech-card {
+    background-color: #505050; /* Cor de fundo do card de tecnologia no tema escuro */
+    border: 1px solid #666;
+}
+
+body.theme-dark #beneficios .tech-card h3 {
+    color: #87cefa; /* Cor do título do card de tecnologia no tema escuro */
+}
+
+body.theme-dark #beneficios .tech-card p {
+    color: #e0e0e0; /* Cor do texto do card de tecnologia no tema escuro */
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+/* Parte do forms */
+
+
+ .form-titulo {
+    margin: 0 0 10px 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.container {
+  background-position: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.form-contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-contato .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato {
+  text-align: center;
+}
+
+.form-box {
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-contato label {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color:  #333;
+}
+
+.form-contato input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-contato input:focus {
+  border-color:#22577a;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 47, 100, 0.2);
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .form-contato {
+    grid-template-columns: 1fr;
+  }
+
+  .form-contato button.btn {
+    grid-column: span 1;
+  }
+}
+
+
+textarea{
+    width: 100%; /* Ocupa 100% da largura do seu container pai */
+    line-height: 200px;
+    padding: 10px;
+    height: 200px;
+    resize: none;
+}
+
+
+.max-linhas{
+    text-align: right;
+    font-size: 12px; 
+    color: #888; 
+     margin-top: 5px;
+}
+.button-enviar{
+    width: 150px;
+    padding: 12px 0;
+    background-color: #5d91b1; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Para centralizar o botão */
+    margin: 20px auto 0 auto; /* Centraliza o botão */
+}
+.button-enviar:hover{
+    color: #22577a
+}
