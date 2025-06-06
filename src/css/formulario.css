@@ -228,3 +228,13 @@ a {
     background-color: #22577a; 
     color: white;
 }
+
+.campo-invalido {
+    border-color: #ff0000 !important; /* Borda vermelha */
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2) !important; /* Sombra vermelha suave */
+}
+
+/* Opcional: Você pode querer mudar a cor da label também */
+.form-contato label.campo-invalido {
+    color: #ff0000 !important;
+}
