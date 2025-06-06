@@ -179,44 +179,39 @@ a {
     grid-column: span 1;
   }
 }
-/* Seu CSS existente para .form-titulo, .container, .form-box, .form-contato, .form-contato .form-group, .form-contato label, .form-contato input, etc., permanece o mesmo. */
 
-/* Novo estilo para a div da textarea ocupar duas colunas */
 .form-contato .form-group-textarea-full-width {
-    grid-column: 1 / -1; /* Faz esta div ocupar todas as colunas do grid */
-    margin-top: 10px; /* Adiciona um pequeno espaçamento acima da textarea */
-    margin-bottom: 20px; /* Adiciona espaçamento abaixo da textarea antes do botão */
+    grid-column: 1 / -1; 
+    margin-top: 10px; 
+    margin-bottom: 20px; 
 }
 
-/* Estilo para a textarea em si */
 .form-contato .form-group-textarea-full-width textarea {
-    width: 100%; /* Ocupa 100% da largura da sua div pai (que agora ocupa duas colunas) */
-    padding: 12px; /* Aumentei um pouco o padding para ficar parecido com os inputs */
-    height: 150px; /* Reduzi um pouco a altura para não ficar tão grande, ajuste se preferir */
-    resize: vertical; /* Permite redimensionar verticalmente */
-    border: 1px solid #ccc; /* Mantém a borda padrão */
-    border-radius: 8px; /* Mantém o raio da borda padrão */
-    font-size: 16px; /* Mantém o tamanho da fonte padrão */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Mantém a sombra interna */
+    width: 100%;
+    padding: 12px; 
+    height: 300px; 
+    resize: none; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     box-sizing: border-box; /* Importante para o padding e a borda não aumentarem a largura */
 }
 
-/* Estilo para o texto de contagem de caracteres */
-.char-count { /* Nova classe, antes era .max-linhas */
+.char-count { 
     text-align: right;
-    font-size: 0.8em; /* Levemente maior que 12px para melhor leitura, mas ainda pequeno */
-    color: #a0a0a0; /* Cor mais clara e discreta, ajuste se preferir */
+    font-size: 0.8em; 
+    color: #a0a0a0; 
     margin-top: 5px;
-    display: block; /* Garante que o span ocupe sua própria linha e text-align funcione */
+    display: block; 
 }
 
-/* Ajustes no botão Enviar */
 .button-enviar {
-    grid-column: 1 / -1; /* Faz o botão ocupar todas as colunas no grid */
-    margin-top: 10px; /* Ajuste o espaçamento superior se necessário */
-    width: auto; /* Permite que o botão se ajuste ao conteúdo ou à largura máxima se necessário */
-    padding: 12px 25px; /* Ajuste o padding para dar mais "corpo" ao botão */
-    background-color: #5d91b1; /* Cor que você já usa */
+    grid-column: 1 / -1; 
+    margin-top: 10px; 
+    width: auto; 
+    padding: 12px 25px; 
+    background-color: #5d91b1; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -224,11 +219,11 @@ a {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block; /* Para garantir que o margin auto funcione */
-    margin-left: auto; /* Centraliza o botão */
-    margin-right: auto; /* Centraliza o botão */
+    margin-left: auto; /* Centralizar o botão */
+    margin-right: auto; /* Centralizar o botão */
 }
 
 .button-enviar:hover {
-    background-color: #22577a; /* Mudei para uma cor mais escura no hover, como você tem em outras partes */
-    color: white; /* Garante que a cor do texto continue branca no hover */
+    background-color: #22577a; 
+    color: white;
 }
